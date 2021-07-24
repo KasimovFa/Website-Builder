@@ -13,7 +13,7 @@ export function row(content, styles = '') {
   export function css(styles = {}) {
     if (typeof styles === 'string') return styles //проверяем  является ли данные строкой, если является возращаем стили иначе приводим в строку разделяем 
     const toString = key => `${key}: ${styles[key]}`
-      return Object.keys(styles).map(toString).join(';') //разделяет стили ;
+      return Object.keys(styles).map(toString).join(';')
   }
   
 

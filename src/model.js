@@ -2,10 +2,10 @@ import image from './assets/image.png'
 import {TextBlock, TitleBlock, ColumnsBlock, ImageBlock} from './classes/blocks' //экпортируем классы
 
 const text = `
-Крутые видео и уроки по JavaScript тут: <a href="https://youtube.com/c/VladilenMinin" target="_blank">Владилен Минин</a>. Тут ты найдешь исчерпывающую информацию по любым аспектам языка, любым фреймворкам, такие как: React, Vue, Angular, Node, Svelte, Express, Next, Nuxt и многое другое. Присоединяйся!
+ Слева находиться меню. Там ты можешь ввести текст и применить к ним стили!
 `
 
-//создаем модель т.е. объекта на основе классов, которые написали в файле block.js
+//создаем модель т.е. объект на основе классов, которые написали в файле block.js
 export const model = [
   new TitleBlock('Конструктор сайтов на чистом JavaScript', {
     tag: 'h2',
@@ -29,9 +29,7 @@ export const model = [
     alt: 'Это картинка'
   }),
   new ColumnsBlock([
-    'Приложение на чистом JavaScript, без использования библиотек',
-    'Узнаешь как работают принципы SOLID и ООП в JavaScript за один курс',
-    'JavaScript - это просто, интересно. Научись создавать любые UI своими руками'
+    'Приложение на чистом JavaScript, без использования библиотек'
   ], {
     styles: {
       background: 'linear-gradient(to bottom, #8e2de2, #4a00e0)',

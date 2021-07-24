@@ -150,7 +150,7 @@ function css() {
     return "".concat(key, ": ").concat(styles[key]);
   };
 
-  return Object.keys(styles).map(toString).join(';'); //разделяет стили ;
+  return Object.keys(styles).map(toString).join(';');
 }
 
 function block(type) {
@@ -330,7 +330,7 @@ var _blocks = require("./classes/blocks");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //экпортируем классы
-var text = "\n\u041A\u0440\u0443\u0442\u044B\u0435 \u0432\u0438\u0434\u0435\u043E \u0438 \u0443\u0440\u043E\u043A\u0438 \u043F\u043E JavaScript \u0442\u0443\u0442: <a href=\"https://youtube.com/c/VladilenMinin\" target=\"_blank\">\u0412\u043B\u0430\u0434\u0438\u043B\u0435\u043D \u041C\u0438\u043D\u0438\u043D</a>. \u0422\u0443\u0442 \u0442\u044B \u043D\u0430\u0439\u0434\u0435\u0448\u044C \u0438\u0441\u0447\u0435\u0440\u043F\u044B\u0432\u0430\u044E\u0449\u0443\u044E \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u043F\u043E \u043B\u044E\u0431\u044B\u043C \u0430\u0441\u043F\u0435\u043A\u0442\u0430\u043C \u044F\u0437\u044B\u043A\u0430, \u043B\u044E\u0431\u044B\u043C \u0444\u0440\u0435\u0439\u043C\u0432\u043E\u0440\u043A\u0430\u043C, \u0442\u0430\u043A\u0438\u0435 \u043A\u0430\u043A: React, Vue, Angular, Node, Svelte, Express, Next, Nuxt \u0438 \u043C\u043D\u043E\u0433\u043E\u0435 \u0434\u0440\u0443\u0433\u043E\u0435. \u041F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0439\u0441\u044F!\n"; //создаем модель т.е. объекта на основе классов, которые написали в файле block.js
+var text = "\n \u0421\u043B\u0435\u0432\u0430 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u044C\u0441\u044F \u043C\u0435\u043D\u044E. \u0422\u0430\u043C \u0442\u044B \u043C\u043E\u0436\u0435\u0448\u044C \u0432\u0432\u0435\u0441\u0442\u0438 \u0442\u0435\u043A\u0441\u0442 \u0438 \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u043A \u043D\u0438\u043C \u0441\u0442\u0438\u043B\u0438!\n"; //создаем модель т.е. объект на основе классов, которые написали в файле block.js
 
 var model = [new _blocks.TitleBlock('Конструктор сайтов на чистом JavaScript', {
   tag: 'h2',
@@ -351,7 +351,7 @@ var model = [new _blocks.TitleBlock('Конструктор сайтов на ч
     height: 'auto'
   },
   alt: 'Это картинка'
-}), new _blocks.ColumnsBlock(['Приложение на чистом JavaScript, без использования библиотек', 'Узнаешь как работают принципы SOLID и ООП в JavaScript за один курс', 'JavaScript - это просто, интересно. Научись создавать любые UI своими руками'], {
+}), new _blocks.ColumnsBlock(['Приложение на чистом JavaScript, без использования библиотек'], {
   styles: {
     background: 'linear-gradient(to bottom, #8e2de2, #4a00e0)',
     padding: '2rem',
@@ -604,28 +604,8 @@ var _app = require("./classes/app");
 
 require("./styles/style.css");
 
-// экспортируем модель нашей таблицы
-
-/*import {model} from './model';
-console.log(model)
-// экспортируем функции
-import {templates} from './templates';
-// экспортируем стили для удобной удобной работы в js
-import '/styles/style.css';
-
-
-const site = document.getElementById('site');
-
-
-model.forEach(block => {
-    let html = '';
-    const toHTML = templates[block.type]; //получаем нужную функцию, например в 1ой итерации. Значит получаем функцию title
-    if (toHTML) {
-      site.insertAdjacentHTML('beforeend', toHTML(block)); // в 1ой итерации передаем в функ - ии  type: title
-    }
-});*/
-//получаем нашу модель т.е. объект model, из файла  model.js
-//получаем класс App мз файла app.js
+//получаем нашу модель
+//получаем класс App из файла app.js
 //стили 
 //передаем нашу модель и запускаем функцию вывод элементов на страницу
 new _app.App(_model.model).init();
@@ -657,7 +637,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55595" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63964" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
